@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+        <header>
+                <div class="header-logo">
+                    <a href="/">
+                            <img src="{{ url_for('static', filename='mathhelp.png') }}" width = "300" height = "100">
+			    
+                    </a>
+                </div>
+
+                 <div class="header-nav">
+                        <ul>
+                                <li class="active"><a href="/add/">Addition</a></li>
+                                <li class="active"><a href="/subtract/">Subtraction</a></li>
+                                <li class="active"><a href="/multiply/">Multiplication</a></li>
+                                <li class="active"><a href="/divide/">Division</a></li>
+                                </ul>
+                </div>
+        </header>
+
+	<main>
+		<section>
+		<h1><b>Addition</b></h1>
+		<h2>Choose a level of quiz</h2>
+		</section>
+
+		<div class="quiz-add-level">
+			<a href="/add/add-start-one/">
+				<img src="{{ url_for('static', filename='level1.png') }}" width = "200" height = "200">
+			</a>
+		</div>
+
+		<div class="quiz-add-level">
+                        <a href="/add/add-start-two/">
+                                <img src="{{ url_for('static', filename='level2.png') }}" width = "200" height = "200">
+                        </a>
+                </div>
+
+		<div class="quiz-add-end">
+                        <a href="/add/add-start-three/">
+                                <img src="{{ url_for('static', filename='level3.png') }}" width = "200" height = "200">
+                        </a>
+                </div>
+
+	</main>
+</body>
+</html>

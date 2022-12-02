@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+        <header>
+                <div class="header-logo">
+                    <a href="/">
+                            <img src="{{ url_for('static', filename='mathhelp.png') }}" width = "300" length = "100">
+                    </a>
+                </div>
+
+                 <div class="header-nav">
+                        <ul>
+                                <li class="active"><a href="/add/">Addition</a></li>
+                                <li class="active"><a href=/subract/">Subtraction</a></li>
+                                <li class="active"><a href="/multiply/">Multiplication</a></li>
+                                <li class="active"><a href="/divide/">Division</a></li>
+                                </ul>
+                </div>
+        </header>
+
+
+
+        <section>
+
+    <p> {{ text }} </p>
+
+    <div class="images">
+    <a href="/multiply/multiply-quiz-three/">
+        <img src="{{ url_for('static', filename='tryagain.png') }}" width = "200" height = "200">
+    </a>
+
+    </div>
+        </section>
+
+</body>
+</html>

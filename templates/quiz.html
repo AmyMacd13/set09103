@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+	<header>
+                <div class="header-logo">
+                    <a href="/">
+                            <img src="{{ url_for('static', filename='mathhelp.png') }}" width = "300" height = "100">
+                    </a>
+                </div>
+
+                 <div class="header-nav">
+                        <ul>
+                                <li class="active"><a href="/add/">Addition</a></li>
+                                <li class="active"><a href="/subtract/">Subtraction</a></li>
+                                <li class="active"><a href="/multiply/">Multiplication</a></li>
+                                <li class="active"><a href="/divide/">Division</a></li>
+                                </ul>
+                </div>
+        </header>
+
+
+	<section>
+	
+
+    <h1>Question {{ number }}</h1>
+
+
+
+	<div class="question">
+    <p> {{ text }} </p>
+
+	</div>
+
+    <ul class="list">
+        {% for answer in answers %}
+        <li><a href="/add/add-quiz-one/?answer={{loop.index}}">{{ answer }}</a></li> 
+        {% endfor %}
+    <ul>
+
+	</section>
+	
+</body>
+</html>

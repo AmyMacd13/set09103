@@ -1,0 +1,13 @@
+{% extends 'quizbase.html' %}
+
+{% block content %}
+    <h1>{% block title %} Posts {% endblock %}</h1>
+    {% for quiz in quiz %}
+        <div class='post'>
+            <p>{{ quiz['id'] }}</p>
+            <h2>{{ quiz['question'] }}</h2>
+            <p>{{ quiz['answer_no'] }}</p>
+	    <p>{{ quiz['answers'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
