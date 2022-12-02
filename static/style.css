@@ -1,0 +1,230 @@
+html {
+    background: #eeeeee;
+    background-color:lightblue;
+}
+
+
+
+body {
+    display: block;
+    margin: auto;
+    max-width: auto;
+    max-height: auto;
+    line-height: 1.5em;
+    overflow: auto;
+    color: #404040;
+    }
+
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+    line-height: 1.4em;
+    color:  #222222;
+    margin: auto;
+    max-width: auto;
+    max-height: auto;
+    overflow: auto;
+    display: block;
+    width: 100%;
+}
+
+section {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+    line-height: 1.4em;
+    color:  #222222;
+    margin: auto;
+    max-width: auto;
+    max-height: auto;
+    overflow: auto;
+    display: block;
+    width: 100%;
+}
+
+
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 32px;
+    line-height: 1.4em;
+    color:  #222222;
+}
+
+h3 {
+        font-size: 60px;
+        font-family: 'Muli', sans-serif;
+        color: #22566d;
+}
+
+header {
+    display: block;
+    width: 100%;
+    float: left;
+    background: #22566d;
+}
+
+
+.header-logo {
+    margin: 0.5% 0 0 5%;
+    width: 30%;
+    float: left;
+}
+
+.header-nav {
+    margin: 1% 5% 0 0;
+    width: 60%;
+    float: left;
+    padding: 2% 0 2% 0;
+    line-height: 1.5;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    margin-left: 5%;
+    float: left;
+}
+
+.header-nav li a {
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    float: left;
+    text-decoration: none;
+}
+
+.header-nav li a:hover {
+    color: #ef90fc;
+}
+
+ul.list {
+        list-style: none;
+         margin: 10% 5% 0 2%;
+}
+
+ul.list li {
+        display: inline;
+        font-size: 50px;
+        padding: 0 2rem;
+        min-width: 12rem;
+        text-align: center;
+
+}
+
+ul.list li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+
+.question {
+        font-size: 50px;
+        float: center;
+
+}
+
+button {
+    width: 100%;
+    margin-left: 7%;
+    margin-top: -3%;
+    margin-bottom: 12%;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: inherit;
+    border: inherit;
+}
+
+button:hover {
+    color: #68226d;
+}
+
+
+.quiz-add-level {
+    margin: 2% 1% 1% 10%;
+    float: left;
+}
+
+.quiz-add-end {
+    margin: 2% 5% 1% 10%;
+    float: left;
+}
+
+.start {
+        margin: 3% 0 0 0;
+        float: center;
+}
+
+.images {
+        margin: 3% 0 0 0;
+        float: center;
+}
+
+.quiz-add-level:hover, .quiz-add-end:hover, .start:hover, .images:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .header-logo {
+        margin: 0.5% 0 0 2%;
+        width: 33%;
+    }
+
+    .header-nav {
+        margin: 2% 2% 0 0;
+    }
+
+    button, .header-nav li, .footer-nav li {
+        margin-left: 4%;
+    }
+
+    button, .header-nav li a, .footer-nav li a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    .header-logo {
+        margin: 0.5% 0 0 0.5%;
+        width: 30%;
+    }
+
+    .header-nav {
+        margin: 15% 0 0 0;
+        float: left;
+    }
+
+    button, .header-nav li, {
+        margin-left: 4%;
+        float: left;
+
+    }
+
+    button, .header-nav li a {
+        font-size: 16px;
+        float: left;
+    }
+}
